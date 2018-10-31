@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.all{
+    width: 550px;
+    height: 100vh;
+    background-color: grey;
+}
+.midle{
+    margin: 0px auto 0px auto;
+}
+.user-status-bar{
+    width: 550px;
+    background-color: rgb(71, 71, 71);
+    overflow: hidden;
+    padding: 25px 30px;
+    box-sizing: border-box;
+}
+.main-user-name{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.main-user-img{
+    display: block;
+    float: right;
+    height: 37px;
+    width: 37px;
+    background-color: white;
+    border-radius: 50%;
+}
+.sis-body{
+    padding-top: 20px;
+    text-align: center;
+}
+.op{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(71, 71, 71);
+    margin: 20px;
+}
+.rounded{
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card-shadow{
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1)
+}
