@@ -46,9 +46,20 @@ body{
     background-color: #015994;
     cursor: pointer;
 }
-.user-name{
-    font-family: "Asap SemiBold";
-    font-size: 18px;
+.sis-status-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.sis-status-bar h3{
+    font-size: 20px;
+    display: block;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+.sis-logo{
+    width: 110px;
 }
 .sis-status{
     margin: 20px 30px;
@@ -56,7 +67,7 @@ body{
     border-bottom: 1px solid rgb(182, 182, 182);
 }
 
-/* menu ateral */
+/* menu lateral */
 .nav-menu{
     height: 100%;
     position: fixed;
@@ -72,20 +83,32 @@ body{
 .nav-container{
     width: 280px;
 }
-/* ==== corpo da aplicação ==== */
-
-.sis-body{
-    display: block;
+.menu-header{
     width: 100%;
-    height: 100%;
-    padding-top: 0px;
-    text-align: center;
+    height: 100px;
+    box-sizing: border-box;
+}
+.menu-header h3{
+    display: block;
+    padding: 30px 0px 0px 15px;
+}
+
+/* ==== corpo da aplicação ==== */
+.sis-body{
+    width: 100%;
+    height: fit-content;
+    padding: 0px 20px 0px 20px;
+    overflow: scroll;
 }
 .main-op{
-    display: inline-block;
-    width: 200px;
-    padding: 10px;
-    margin: 15px;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-content: center;
+    width: 230px;
+    height: fit-content;
+    padding: 20px;
+    margin: 8px;
     color: rgb(63, 63, 63);
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.4), -1px -2px 8px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
@@ -93,9 +116,10 @@ body{
     cursor: pointer;
 }
 .main-op span{
-    font-size: 60px;
+    font-size: 50px;
+    margin: 0px 14px;
 }
-
-.op-name{
-    /* desenvolvendo... */
+.main-op .op-name{
+    height: fit-content;
+    font-family: "Asap SemiBold", sans-serif;
 }

@@ -1,3 +1,12 @@
+
+//uso do localstorage
+function store(nome, pass) {
+    localStorage.setItem("nome", nome);
+    localStorage.setItem("pass", pass);
+}
+
+
+//interação com o botão de menu
 $("#menu-buttom").click(function () {
     $("#nav-menu").addClass("nav-show");
 })
