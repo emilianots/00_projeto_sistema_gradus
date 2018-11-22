@@ -1,82 +1,101 @@
+
+
+/* ==== fontes ==== */
+@font-face{
+    font-family: 'Cabin';
+    src: url("./01_sources/02_fonts/Cabin/Cabin-Regular.ttf");
+}
+@font-face{
+    font-family: 'Asap SemiBold';
+    src: url("./01_sources/02_fonts/Asap/Asap-SemiBold.ttf");
+}
+
 body{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Cabin";
 }
-.all{
+
+/* ==== corpo geral do sistema ==== */
+.app{
     width: 550px;
     height: 100vh;
-    background-color: rgb(167, 167, 167);
+    background-color: #eeeeee;
     overflow: hidden;
-}
-.midle{
     margin: 0px auto 0px auto;
 }
-.user-status-bar{
-    width: 550px;
-    background-color: rgb(71, 71, 71);
-    overflow: hidden;
-    padding: 20px 30px;
+/* ==== barra superior ==== */
+.sis-top-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #046db5;
+    padding: 15px 30px;
     box-sizing: border-box;
-    border-bottom: 2px solid rgb(0, 0, 0);
-}
-.main-user-name{
-    float: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: rgb(187, 187, 187);
-}
-.main-user-name span{
-    display: block;
-    font-size: 13px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     color: white;
-    background-color: black;
+}
+.sis-status-bar{
+}
+.menu-buttom{
+    font-size: 30px;
+    margin-right: 20px;
+    padding: 0px 10px;
     border-radius: 5px;
-    padding: 3px;
+    background-color: #015994;
+    cursor: pointer;
 }
-.main-user-img{
-    display: block;
-    float: right;
-    height: 37px;
-    width: 37px;
-    background-color: white;
-    border-radius: 50%;
-    padding: 3px;
+.user-name{
+    font-family: "Asap SemiBold";
+    font-size: 18px;
 }
-.sis-body-start{
+.sis-status{
+    margin: 20px 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+/* menu ateral */
+.nav-menu{
+    height: 100%;
+    position: fixed;
+    background-color: grey;
+    transition: width 300ms;
+    overflow: hidden;
+    width: 0px;
+}
+.nav-show{
+    position: fixed;
+    width: 280px;
+}
+.nav-container{
+    width: 280px;
+}
+/* ==== corpo da aplicação ==== */
+
+.sis-body{
     display: block;
+    width: 100%;
+    height: 100%;
     padding-top: 0px;
     text-align: center;
 }
-.op{
+.main-op{
     display: inline-block;
     width: 200px;
-    height: 200px;
-    background-color: rgb(71, 71, 71);
-    margin: 20px;
-    color: rgb(187, 187, 187);
-    overflow: hidden;
-}
-.rounded{
-    border-radius: 20px;
+    padding: 10px;
+    margin: 15px;
+    color: rgb(63, 63, 63);
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.4), -1px -2px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: white;
     cursor: pointer;
 }
-.card-shadow{
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5)
+.main-op span{
+    font-size: 60px;
 }
+
 .op-name{
     /* desenvolvendo... */
-}
-.sis-bottom-bar{
-    height: 100%;
-    background-color: rgb(71, 71, 71);
-}
-
-
-.sis-body-tela-triagem{
-    display: block;
-
-}
-.search-bar-alas{
-    
 }

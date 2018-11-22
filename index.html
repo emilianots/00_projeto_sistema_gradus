@@ -4,38 +4,66 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Gradus&#169</title>
-        <link rel="stylesheet" href="./01_sources/style.css">
-        <script src="./01_sources/script.js" defer></script>
+        <title>Gradus™ | Prontuário</title>
+
+        <link rel="shortcut icon" href="./01_sources/01_img/logos/icon-gradus.png" type="image/x-icon">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"crossorigin="anonymous">
+
     </head>
     <body>
-        <div class="all midle">
-            <div class="user-status-bar">
-                <div class="main-user-name"><span>Enfermeiro(a)</span> Emily Ribeiro</div>
-                <img src="./02_img/icone.png"  class="main-user-img">
-            </div>
 
-            <div class="sis-body-start">
-                <div id="op-1" class="op rounded card-shadow" onclick="window.location='./00_pages/01_pages-alas.html'">
-                    <img src="" class="op-img">
+        <div id="app" class="app">
+            
+            <!-- menu laderal -->
+            <nav id="nav-menu" class="nav-menu">
+                <div id="nav-container" class="nav-container">
+                    <header id="menu-header" class="menu-header">
+                        <h3>Painel de opções</h3>
+                    </header>
+                    <div id="nav-op-panel">
+                        
+                    </div>
+
+                </div>
+            </nav>
+
+            <div id="sis-top-bar" class="sis-top-bar">
+                <div id="menu-buttom" class="menu-buttom">
+                    <span class="fas fa-bars" ></span>
+                </div>
+                <div id="sis-status-bar" class="sis-status-bar">
+                    <div id="user-name" class="user-name">
+                        <span>Enfermeiro(a)</span> Emily Ribeiro
+                    </div>
+                </div>
+            </div>            
+
+            <div id="sis-status" class="sis-status">
+                <h3>Painel Principal</h3>
+            </div>
+            <div id="sis-body" class="sis-body">
+                
+                <div id="op-1" class="main-op" onclick="window.location='./00_pages/01_pages-alas.html'">
+                    <span class="fas fa-address-card" ></span>
                     <div class="op-name">Triagem</div>
                 </div>
-                <div id="op-2" class="op rounded card-shadow">
-                    <img src="" class="op-img">
+                <div id="op-2" class="main-op">
+                    <span class="fas fa-users"></span>
                     <div class="op-name">Pacientes</div>
                 </div>
-                <div id="op-3" class="op rounded card-shadow">
-                    <img src="" class="op-img">
+                <div id="op-3" class="main-op">
+                    <span class="fas fa-chart-line"></span>
                     <div class="op-name">Evolução</div>
                 </div>
-                <div id="op-4" class="op rounded card-shadow">
-                    <img src="" class="op-img">
+                <div id="op-4" class="main-op">
+                    <span class="fas fa-procedures"></span>
                     <div class="op-name">Internamento</div>
                 </div>
             </div>
-            <footer class="sis-bottom-bar">
-                
-            </footer>
         </div>
+        <script src="./01_sources/03_libs/02_jQuery/jquery-3.3.1.min.js"></script>
+        <script src="./script.js"></script>
     </body> 
 </html>
