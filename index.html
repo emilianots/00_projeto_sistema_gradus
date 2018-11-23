@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -7,7 +7,7 @@
         <title>Gradus™ | Prontuário</title>
 
         <link rel="shortcut icon" href="./01_sources/01_img/logos/icon-gradus.png" type="image/x-icon">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"crossorigin="anonymous">
 
@@ -23,11 +23,18 @@
                         <h3>Fulano de Tal</h3>
                     </header>
                     <div id="nav-op-panel">
-                        
+                        <div id="nav-op-panel" class="nav-op">Painel Principal</div>
+                        <div id="nav-op-triagem" class="nav-op" onclick="window.location='./00_pages/triagem.html'">Triagem</div>
+                        <div id="nav-op-pacientes" class="nav-op">Pacientes</div>
+                        <div id="nav-op-evolucao" class="nav-op">Evolução</div>
+                        <div id="nav-op-internamento" class="nav-op">Internamento</div>
                     </div>
 
                 </div>
             </nav>
+            <div class="overlay">
+            
+            </div>
 
             <div id="sis-top-bar" class="sis-top-bar">
                 <div id="menu-buttom" class="menu-buttom">
