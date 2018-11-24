@@ -1,17 +1,15 @@
 
-//uso do localstorage
-function store(nome, pass) {
+function store(nome, pass) { //uso do localstorage
     localStorage.setItem("nome", nome);
     localStorage.setItem("pass", pass);
 }
 
-
-//interação com o botão de menu
-$("#menu-buttom").click(function () {
+$("#menu-buttom").click(function () { //botão de menu
     $("#nav-menu").addClass("nav-show");
     $(".overlay").fadeIn(200);
 })
-$("#app").mouseup(function (e) {
+
+$("#app").mouseup(function (e) { // fecha menu com clique fora dele
     var menu = $("#nav-menu");
     if ((!menu.is(e.target)) && (menu.has(e.target).length === 0)) {
         $("#nav-menu").removeClass("nav-show");
@@ -19,6 +17,3 @@ $("#app").mouseup(function (e) {
     }
 })
 
-var enfermeiros = [];
-var medicos = [];
-var pacientes = [];
