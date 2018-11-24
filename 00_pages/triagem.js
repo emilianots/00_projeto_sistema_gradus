@@ -15,11 +15,13 @@ function getPacientes() {
 getPacientes();
 $("#main-op-paciente-internado").click(function () {
     console.table(pacientes);
-    $("#sis-body-op").hide();
+    $("#sis-body-panel").hide();
     $("#step-back").show();
+    $("#list-pacientes").show();
 })
 
 $("#step-back").click(function () {
-    $("#sis-body-op").show();
+    $("#sis-body-panel").show();
     $("#step-back").hide();
+    $("#list-pacientes").hide();
 })

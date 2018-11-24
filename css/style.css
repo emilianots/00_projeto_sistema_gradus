@@ -170,3 +170,7 @@ body {
   background-color: #046db5;
   color: white;
 }
+/* ====lista de pacientes==== */
+.list-group {
+  font-family: "Cabin", "Arial";
+}

@@ -28,7 +28,7 @@
 @main-color:#046db5;
 @sec-color: #003159;
 @main-font-color: rgb(63, 63, 63);
-@main-font: "Asap SemiBold", "Arial";
+@title-font: "Asap SemiBold", "Arial";
 @text-font: "Cabin", "Arial";
 
 body{
@@ -44,7 +44,7 @@ body{
     overflow: hidden;
     margin: 0px auto 0px auto;
     user-select: none;
-    font-family: @main-font, Arial, Helvetica, sans-serif;
+    font-family: @title-font, Arial, Helvetica, sans-serif;
 }
 /* ==== barra superior ==== */
 .sis-top-bar{
@@ -148,7 +148,7 @@ body{
     height: calc(100vh - 117px);
     padding: 0px 20px 0px 20px;
     overflow: scroll;
-    font-family: @main-font, Arial, Helvetica, sans-serif
+    font-family: @title-font, Arial, Helvetica, sans-serif
 }
 .main-op{
     display: flex;
@@ -172,16 +172,21 @@ body{
 }
 .main-op .op-name{
     height: fit-content;
-    font-family: @main-font, Arial, Helvetica, sans-serif;
+    font-family: @title-font, Arial, Helvetica, sans-serif;
 }
 
 /* ===botão */
 .step-back{
     margin: 5px 0px 7px 7px;
     color: @main-color;
-    font-family: @main-font, Arial, Helvetica, sans-serif;
+    font-family: @title-font, Arial, Helvetica, sans-serif;
 }
 .btn-lg{
     background-color: @main-color;
     color: white;
+}
+
+/* ====lista de pacientes==== */
+.list-group{
+    font-family: @text-font;
 }
