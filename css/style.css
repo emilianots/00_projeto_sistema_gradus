@@ -15,17 +15,16 @@
 /* ==== fontes ==== */
 @font-face {
   font-family: 'Cabin';
-  src: url("./01_sources/02_fonts/Cabin/Cabin-Regular.ttf");
+  src: url("../01_sources/02_fonts/Cabin/Cabin-Regular.ttf");
 }
 @font-face {
   font-family: 'Asap SemiBold';
-  src: url("./01_sources/02_fonts/Asap/Asap-SemiBold.ttf");
+  src: url("../01_sources/02_fonts/Asap/Asap-SemiBold.ttf");
 }
 /* ==== variáveis === */
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Cabin", "Arial";
 }
 /* ==== corpo geral do sistema ==== */
 .app {
@@ -35,6 +34,7 @@ body {
   overflow: hidden;
   margin: 0px auto 0px auto;
   user-select: none;
+  font-family: "Asap SemiBold", "Arial", Arial, Helvetica, sans-serif;
 }
 /* ==== barra superior ==== */
 .sis-top-bar {
@@ -78,6 +78,7 @@ body {
 }
 .sis-status h3 {
   font-size: 20px;
+  margin: 0px;
 }
 /* menu lateral */
 .nav-menu {
@@ -133,6 +134,7 @@ body {
   height: calc(100vh - 117px);
   padding: 0px 20px 0px 20px;
   overflow: scroll;
+  font-family: "Asap SemiBold", "Arial", Arial, Helvetica, sans-serif;
 }
 .main-op {
   display: flex;
@@ -157,4 +159,14 @@ body {
 .main-op .op-name {
   height: fit-content;
   font-family: "Asap SemiBold", "Arial", Arial, Helvetica, sans-serif;
+}
+/* ===botão */
+.step-back {
+  margin: 5px 0px 7px 7px;
+  color: #046db5;
+  font-family: "Asap SemiBold", "Arial", Arial, Helvetica, sans-serif;
+}
+.btn-lg {
+  background-color: #046db5;
+  color: white;
 }

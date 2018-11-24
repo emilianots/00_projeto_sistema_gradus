@@ -4,13 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Gradus™ | Prontuário</title>
+        <title>Gradus™ | Triagem</title>
 
         <link rel="shortcut icon" href="../01_sources/01_img/logos/icon-gradus.png" type="image/x-icon">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"crossorigin="anonymous">
-
     </head>
     <body>
 
@@ -50,17 +49,26 @@
                 <h3>Realizar Triagem</h3>
             </div>
 
-            <div id="sis-body-s" class="sis-body">
-                <div id="main-op-novo-paciente"class="main-op">
-                    <div class="op-name">Novo paciente</div>
+            <div id="sis-body" class="sis-body">
+                <div id="step-back" class="step-back" style="display: none">
+                    <button type="button" class="btn bnt-primary btn-lg" >Voltar</button>
                 </div>
-                <div id="main-op-paciente-internado" class="main-op">
-                    <div class="op-name">Paciente internado</div>
+
+                <div id="sis-body-op" class="sis-body-op">
+                    <div id="main-op-novo-paciente" class="main-op">
+                        <div class="op-name">Novo paciente</div>
+                    </div>
+                    <div id="main-op-paciente-internado" class="main-op">
+                        <div class="op-name">Paciente internado</div>
+                    </div>
+                    
                 </div>
                 
             </div>
         </div>
         <script src="../01_sources/03_libs/02_jQuery/jquery-3.3.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"crossorigin="anonymous"></script>
         <script src="../script.js"></script>
+        <script src="./triagem.js"></script>
     </body> 
 </html>

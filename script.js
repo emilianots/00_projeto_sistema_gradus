@@ -18,3 +18,7 @@ $("#app").mouseup(function (e) {
         $(".overlay").fadeOut(200);
     }
 })
+
+var enfermeiros = [];
+var medicos = [];
+var pacientes = [];
