@@ -17,6 +17,18 @@ function getPacientes() { // retorna os pacientes do servidor
     })
 }
 
+function postPaciente(elem) {
+    $.ajax({
+        type: "POST",
+        url: URL,
+        data: elem,
+        async: false,
+        success: function (data) {
+            console.log(data);
+        }
+    })
+}
+
 function createList(lista) { // popula a variável pacientes
     for (let elem of lista) {
         let li = document.createElement("li");
@@ -49,9 +61,25 @@ function onlyNames(lista) { //pegar somente os nomes
     return names;
 }
 
-getPacientes();
+function newPaciente() { //adicionar novo paciente
+    //let nome = $("#nome-paciente");
+    let paciente = {
+        nome: $("#nome-paciente").val(),
+        id: idPaciente += 1,
+        idAla: 1
+    }
+    postPaciente(paciente);
+}
+
+$("#main-op-novo-paciente").click(function () { //botão de novo paciente
+    $("#sis-body-panel").hide();
+    $("#step-back").show();
+    $("#form-group").show();
+})
+
 
 $("#main-op-paciente-internado").click(function () { //botão de listar os pacientes internados - triegem internados
+    getPacientes();
     $("#sis-body-panel").hide();
     $("#step-back").show();
     $("#list-pacientes").empty();
@@ -59,8 +87,9 @@ $("#main-op-paciente-internado").click(function () { //botão de listar os pacie
     $("#list-pacientes").show();
 })
 
-$("#step-back").click(function () {
+$("#step-back").click(function () { //botão voltar
     $("#sis-body-panel").show();
     $("#step-back").hide();
     $("#list-pacientes").hide();
+    $("#form-group").hide();
 })

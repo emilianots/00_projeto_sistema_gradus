@@ -163,13 +163,13 @@ body {
 }
 /* ===botão */
 .step-back {
-  margin: 5px 0px 7px 7px;
   color: #046db5;
   font-family: "Asap SemiBold", "Arial", Arial, Helvetica, sans-serif;
 }
-.btn-lg {
+.btn {
   background-color: #046db5;
   color: white;
+  margin: 5px 0px 7px 0px;
 }
 /* ====lista de pacientes==== */
 .list-group {

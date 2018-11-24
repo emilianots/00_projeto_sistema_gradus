@@ -52,7 +52,7 @@
 
             <div id="sis-body" class="sis-body">
                 <div id="step-back" class="step-back" style="display: none">
-                    <button type="button" class="btn bnt-primary btn-lg" > <span class="fas fa-angle-left"> </span> Voltar</button>
+                    <button type="button" class="btn bnt-primary btn-md" > <span class="fas fa-angle-left"> </span> Voltar</button>
                 </div>
 
                 <div id="sis-body-op" class="sis-body-op">
@@ -64,11 +64,18 @@
                             <div class="op-name">Paciente internado</div>
                         </div>
 
+                        
+
                     </div>
                     <ul id="list-pacientes" class="list-group list-group-flush" style="display: none;">
                         <!-- <li class="list-group-item list-group-item-action">Item de lista 1</li> -->
-
                     </ul>
+                    <div id="form-group" class="form-group" style="display: none">
+                        <label>Nome do paciente</label>
+                        <input id="nome-paciente" class="form-control" type="text" placeholder="Nome">
+                        <button id="new-paciente" type="button" class="btn bnt-primary btn-md" onclick="javascript:newPaciente()"> <span class="fas fa-cloud-upload-alt"> </span> Registrar</button>
+                    </div>
+
                 </div>
                 
             </div>
