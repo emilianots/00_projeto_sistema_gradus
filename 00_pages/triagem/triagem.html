@@ -71,22 +71,73 @@
                     <ul id="list-pacientes" class="list-group list-group-flush" style="display: none;">
                         <!-- <li class="list-group-item list-group-item-action">Item de lista 1</li> -->
                     </ul>
-                    <div id="form-group" class="form-group" style="display: none">
-                        <input id="nome-paciente" class="form-control" type="text" placeholder="Nome do paciente">
-                        
-                        <div class="form-check-inline">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                Masculino
-                            </label>
+                    
+                    <!-- Fomulário de novo paciente -->
+                    <div id="form-n-paciente" class="form-group" style="display: none">
+                        <div id="form-entrada" class="form-group">
+                            <label for="form-entrada">Dados de entrada</label>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input id="n-registro" type="text" class="form-control" placeholder="N° de registro internamento">
+                                </div>
+                                <div class="col">
+                                        <select class="form-control" id="tipo-convenio" >
+                                            <option>Tipo de convênio</option>
+                                            <option>Providenciário</option>
+                                            <option>Outro</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <textarea id="mot-internamento" class="form-control" rows="3" placeholder="Motivo do internamento"></textarea>
+                            
+                            <div class="form-row">
+                                <div class="col">
+                                    <input id="doc-autorizacao" type="text" class="form-control" placeholder="Doc. autorizacao">
+                                </div>
+                                <div class="col">
+                                    <input id="n-prontuario" type="text" class="form-control" placeholder="N° protuário">
+                                </div>
+                                <div class="col">
+                                    <input id="n-leito" type="text" class="form-control" placeholder="Leito">
+                                </div>
+                            </div>
+                            <input type="text" id="enf-responsavel" class="form-control" placeholder="Enfermaria responsável">
+                            
                         </div>
-                        <div class="form-check-inline">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                            <label class="form-check-label" for="exampleRadios2">
-                                Feminino
-                            </label>
+
+                        <label for="form-paciente">Dados do Paciente</label>
+                        <div id="form-paciente" class="form-group">
+                            <input id="nome-paciente" class="form-control" type="text" placeholder="Nome do paciente">
+                            <div class="form-row">
+                                <div class="col col-md-3">
+                                    <input id="sexo" type="text" class="form-control" placeholder="Sexo">
+                                </div>
+                                <div class="col">
+                                    <input id="data-nasc" type="text" class="form-control" placeholder="Data de nascimento">
+                                </div>
+                                <div class="col">
+                                    <input id="n-rg" type="text" class="form-control" placeholder="R.G.">
+                                    <input id="n-rg" type="text" class="form-control" placeholder="Naturalidade">
+                                </div>
+                            </div>
+                            <input id="nome-responsavel" class="form-control" type="text" placeholder="Responsável">
+                            <input id="nome-mae" class="form-control" type="text" placeholder="Nome da mãe">
+                            <input id="nome-pai" class="form-control" type="text" placeholder="Nome do pai">
+                            <div class="form-row">
+                                <div class="col col-md-4">
+                                    <input id="estado-civil" type="text" class="form-control" placeholder="Estado civíl">
+                                </div>
+                                <div class="col">
+                                    <input id="nome-conjuge" class="form-control" placeholder="Nome do conjuge">
+                                </div>
+                            </div>
+
+                            
                         </div>
-                        <button id="new-paciente" type="button" class="btn bnt-primary btn-md" onclick="javascript:newPaciente()"> <span class="fas fa-cloud-upload-alt"> </span> Registrar paciente</button>
+                        <button id="new-paciente" type="button" class="btn bnt-primary btn-md" onclick="javascript:newPaciente()"> <span class="fas fa-cloud-upload-alt">
+                            </span> Registrar paciente</button>
+                        <button id="printar" type="button" class="btn bnt-primary btn-md" onclick="javascript:printar()"> <span class="fas fa-cloud-upload-alt"> </span> Gerar PDF</button>
                     </div>
                     
 

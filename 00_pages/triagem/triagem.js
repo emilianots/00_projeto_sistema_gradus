@@ -31,9 +31,14 @@ function postPaciente(elem) {
 
 function createList(lista) { // popula a variável pacientes
     for (let elem of lista) {
+
         let li = document.createElement("li");
+        li.id = elem.id;
         li.classList.add("list-group-item","list-group-item-action");
         li.innerHTML = elem.nome;
+        li.addEventListener('click', function () {
+            window.location = "../paciente/paciente.html";
+        })
         $("#list-pacientes").append(li);
     }
 }
@@ -64,23 +69,28 @@ function onlyNames(lista) { //pegar somente os nomes
 function newPaciente() { //adicionar novo paciente
     //let nome = $("#nome-paciente");
     //console.log($("#nome-paciente").val());
-    if ($("#nome-paciente").val() == "") {
-        console.log("não vale");
-        return;
-    }
-    console.log("vale");
-    let paciente = {
-        nome: $("#nome-paciente").val(),
-        id: idPaciente += 1,
-        idAla: 1
+    //console.log($("#tipo-convenio").val())
+    if ($("#n-registro").val() == "") {
+        
     }
     //postPaciente(paciente);
+}
+function printar() { // gerar pdf
+    $("#app").css({
+        width: '100vw',
+        border:'2px solid black'
+    })
+    window.print();
+    $("#app").css({
+        width: '550px',
+        border: '0px solid transparent'
+    })
 }
 
 $("#main-op-novo-paciente").click(function () { //botão de novo paciente
     $("#sis-body-panel").hide();
     $("#step-back").show();
-    $("#form-group").show();
+    $("#form-n-paciente").show();
 })
 
 
@@ -97,5 +107,6 @@ $("#step-back").click(function () { //botão voltar
     $("#sis-body-panel").show();
     $("#step-back").hide();
     $("#list-pacientes").hide();
-    $("#form-group").hide();
+    $("#form-n-paciente").hide();
 })
+
