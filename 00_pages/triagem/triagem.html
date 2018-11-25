@@ -6,8 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Gradus™ | Triagem</title>
 
-        <link rel="shortcut icon" href="../01_sources/01_img/logos/icon-gradus.png" type="image/x-icon">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../../01_sources/01_img/logos/icon-gradus.png" type="image/x-icon">
+        <link rel="stylesheet" href="../../css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"crossorigin="anonymous">
         
@@ -23,9 +23,9 @@
                         <h3>Fulano de Tal</h3>
                     </header>
                     <div id="nav-op-panel">
-                        <div id="nav-op" class="nav-op"  onclick="window.location='../index.html'">Painel Principal</div>
+                        <div id="nav-op" class="nav-op"  onclick="window.location='../../index.html'">Painel Principal</div>
                         <div id="nav-op" style="background-color: #003159; color: white" class="nav-op">Triagem</div>
-                        <div id="nav-op" class="nav-op">Pacientes</div>
+                        <div id="nav-op" class="nav-op" onclick="window.location='../paciente/paciente.html'">Pacientes</div>
                         <div id="nav-op" class="nav-op">Evolução</div>
                         <div id="nav-op" class="nav-op">Internamento</div>
                     </div>
@@ -39,8 +39,8 @@
                 <div id="menu-buttom" class="menu-buttom">
                     <span class="fas fa-bars" ></span>
                 </div>
-                <div id="sis-status-bar" class="sis-status-bar" onclick="window.location='../index.html'">
-                    <img id="sis-logo" class="sis-logo" src="../01_sources/01_img/logos/logo-gradus-branco.png" alt="App logo" srcset="">
+                <div id="sis-status-bar" class="sis-status-bar" onclick="window.location='../../index.html'">
+                    <img id="sis-logo" class="sis-logo" src="../../01_sources/01_img/logos/logo-gradus-branco.png" alt="App logo" srcset="">
                     <h3>Hospital Dr. Eudásio Barroso</h3>
                 </div>
             </div>            
@@ -72,8 +72,20 @@
                         <!-- <li class="list-group-item list-group-item-action">Item de lista 1</li> -->
                     </ul>
                     <div id="form-group" class="form-group" style="display: none">
-                        <label>Nome do paciente</label>
-                        <input id="nome-paciente" class="form-control" type="text" placeholder="Nome">
+                        <input id="nome-paciente" class="form-control" type="text" placeholder="Nome do paciente">
+                        
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Masculino
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Feminino
+                            </label>
+                        </div>
                         <button id="new-paciente" type="button" class="btn bnt-primary btn-md" onclick="javascript:newPaciente()"> <span class="fas fa-cloud-upload-alt"> </span> Registrar paciente</button>
                     </div>
                     
@@ -82,9 +94,9 @@
                 
             </div>
         </div>
-        <script src="../01_sources/03_libs/02_jQuery/jquery-3.3.1.min.js"></script>
+        <script src="../../01_sources/03_libs/02_jQuery/jquery-3.3.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"crossorigin="anonymous"></script>
-        <script src="../script.js"></script>
+        <script src="../../script.js"></script>
         <script src="./triagem.js"></script>
     </body> 
 </html>
