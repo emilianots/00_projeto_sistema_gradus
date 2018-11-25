@@ -1,5 +1,6 @@
 var URL = "http://localhost:3000/pacientes";
 var pacientes = null;
+var paciente = null;
 var namesPaciente = [];
 var idPaciente = 0;
 
@@ -13,6 +14,19 @@ function getPacientes() { // retorna os pacientes do servidor
             pacientes.sort(sortByAtribute('nome'));
             namesPaciente = onlyNames(pacientes);
             idPaciente = getMax(pacientes, 'id');
+        }
+    })
+}
+function getOnePaciente(id) {
+    let pacUrl = URL;
+    pacUrl += "/" + id;
+    $.ajax({
+        type: "GET",
+        url: pacUrl ,
+        async: false,
+        success: function (data) {
+            paciente = data;
+            console.table(paciente);
         }
     })
 }
@@ -31,6 +45,8 @@ function postPaciente(elem) {
 
 function createList(lista) { // popula a variável pacientes
     for (let elem of lista) {
+        //localStorage.setItem();
+        //console.log(localStorage);
 
         let li = document.createElement("li");
         li.id = elem.id;
@@ -38,6 +54,10 @@ function createList(lista) { // popula a variável pacientes
         li.innerHTML = elem.nome;
         li.addEventListener('click', function () {
             window.location = "../paciente/paciente.html";
+            localStorage.clear();
+            localStorage.setItem("paciente", JSON.stringify(elem));
+            //toPaciente(this.id);
+            getOnePaciente(this.id);
         })
         $("#list-pacientes").append(li);
     }
@@ -85,6 +105,10 @@ function printar() { // gerar pdf
         width: '550px',
         border: '0px solid transparent'
     })
+}
+
+function toPaciente(id) {
+    
 }
 
 $("#main-op-novo-paciente").click(function () { //botão de novo paciente
