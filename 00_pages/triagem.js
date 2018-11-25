@@ -63,12 +63,18 @@ function onlyNames(lista) { //pegar somente os nomes
 
 function newPaciente() { //adicionar novo paciente
     //let nome = $("#nome-paciente");
+    //console.log($("#nome-paciente").val());
+    if ($("#nome-paciente").val() == "") {
+        console.log("não vale");
+        return;
+    }
+    console.log("vale");
     let paciente = {
         nome: $("#nome-paciente").val(),
         id: idPaciente += 1,
         idAla: 1
     }
-    postPaciente(paciente);
+    //postPaciente(paciente);
 }
 
 $("#main-op-novo-paciente").click(function () { //botão de novo paciente
