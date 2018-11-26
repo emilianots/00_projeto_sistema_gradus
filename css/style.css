@@ -175,3 +175,14 @@ body {
 .list-group {
   font-family: "Cabin", "Arial";
 }
+/* ====pagina do paciente */
+.caixa-texto {
+  background-color: white;
+  font-family: "Cabin", "Arial";
+  padding: 6px 10px;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 7px;
+  color: #3f3f3f;
+}

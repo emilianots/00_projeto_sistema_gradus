@@ -51,7 +51,7 @@
         </div>
 
         <div id="sis-status" class="sis-status">
-            <h3> Perfil do paciente</h3>
+            <h3> Painel do paciente</h3>
         </div>
 
         <div id="sis-body" class="sis-body">
@@ -61,9 +61,67 @@
             </div>
             <!-- corpo da aplicação -->
             <div id="sis-body-op" class="sis-body-op">
-                conteúdo 
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <label for="nome-paciente">Paciente</label>
+                            <div id="nome-paciente" class="caixa-texto"></div>
+                        </div>
+                        <div class="col col-3">
+                            <label for="sexo">Sexo</label>
+                            <div id="sexo" class="caixa-texto"></div>
+                        </div>
 
-            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-4">
+                            <label for="data-nasc">Data de nasc.</label>
+                            <div id="data-nasc" class="caixa-texto"></div>
+                        </div>
+                        <div class="col">
+                            <label for="rg">R.G</label>
+                            <div id="rg" class="caixa-texto"></div>
+                        </div>
+                        <div class="col">
+                            <label for="naturalidade">Naturalidade</label>
+                            <div id="naturalidade" class="caixa-texto"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="profissao">Profissão</label>
+                            <div id="profissao" class="caixa-texto"></div>
+                        </div>
+                        <div class="col">
+                            <label for="std-civil">Estado civíl</label>
+                            <div id="std-civil" class="caixa-texto"></div>
+                        </div>
+                    </div>
+
+                    <label for="nome-conjuge">Nome cônjuge</label>
+                    <div id="nome-conjuge" class="caixa-texto"></div>
+                        
+                    <div class="row">
+                        <div class="col">
+                            <label for="nome-mae">Nome mãe</label>
+                            <div id="nome-mae" class="caixa-texto"></div>
+                        </div>
+                        <div class="col">
+                            <label for="nome-pai">Nome pai</label>
+                            <div id="nome-pai" class="caixa-texto"></div>
+                        </div>
+                    </div>
+                    <div id="rodape" class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-md" onclick="javacript:gerarPDF()">Gerar PDF</button>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+
+                
+                </div>
+            </div> 
+        </div>
     </div>
     <script src="../../01_sources/03_libs/02_jQuery/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
