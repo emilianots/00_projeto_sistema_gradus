@@ -45,8 +45,6 @@ function postPaciente(elem) {
 
 function createList(lista) { // popula a variável pacientes
     for (let elem of lista) {
-        //localStorage.setItem();
-        //console.log(localStorage);
 
         let li = document.createElement("li");
         li.id = elem.id;

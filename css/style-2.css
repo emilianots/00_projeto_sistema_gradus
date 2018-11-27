@@ -1,0 +1,219 @@
+
+/* Tela de Pacientes */
+
+.ala-paciente{
+  float: right;
+  display: flex;
+}
+
+.ala-combobox{
+  padding: 3px;
+  margin: 5px;
+  position: relative;
+  top: -5px;
+  border-radius: 4px;
+}
+
+.desc-lista-pacientes{
+  display: flex;
+}
+
+.coluna-sus{
+  width: 25%;
+}
+
+.coluna-nome{
+  width: 60%;
+}
+
+.lista-p-id{
+  margin-right: 20px;
+  position: relative;
+  left: -5px;
+  overflow: hidden;
+}
+
+.lista-p-name{
+  overflow: hidden;
+}
+
+.desc-lista-pacientes{
+  position: relative;
+  left: 35px;
+}
+
+.title{
+  float: left;
+}
+
+.linha-paciente{
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(0,0,0,.125);
+  padding: 8px;
+  color: #3f3f3f;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+}
+
+.bar-pesquisa{
+  width: 310px;
+  border-radius: 4px;
+  padding: 3px;
+  margin-right: 3px;
+}
+
+.type-search{
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.search{
+  background-color: #046db5;
+  color: white;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+.pesquisa{
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.type-search-content{
+  margin-right: 3px;
+
+}
+
+.botao-0{
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: #046db5;
+  position: relative;
+  margin-bottom: -10px;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-paciente p{
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.change-paciente p{
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+/* EVOLUIR PACIENTE */
+
+.change-paciente{
+  top: 3px;
+}
+
+.area-evolucao{
+  font-size: 15px;
+  padding: 8px;
+  margin: 3px;
+  color: #3f3f3f;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+}
+
+.linha-evolucao{
+  width: 100%;
+  border-bottom: 1px #b6b6b6 solid;
+  display: flex;
+  font-family: "Cabin";
+  margin: 5px;
+}
+
+.fontstyle0{
+  font-family: "Asap SemiBold";
+}
+
+.title{
+  width: 50%;
+}
+
+.time{
+  margin-right: 120px;
+}
+
+.queixa .title{
+  width: 30%;
+}
+
+.queixa .local{
+  width: 20%;
+}
+
+.queixa .sintoma{
+  width: 35%;
+}
+
+.exame .title{
+  width: 60%;
+}
+
+.exame .local{
+  width: 25%;
+}
+
+.procedimento .title{
+  width: 85%;
+}
+
+.botao-1{
+  color: white;
+  background-color: #046db5;
+  width: 25px;
+  height: 25px;
+  padding-left: 5.7px;
+  padding-top: 2px;
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+}
+
+.botao-2{
+  color: white;
+  background-color: #046db5;
+  width: 100px;
+  height: 30px;
+  padding-left: 9px;
+  padding-top: 4px;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.linha-evolucao .dell{
+  background-color: rgb(170, 15, 15);
+}
+
+.options-procedimento{
+  margin-top: 50px;
+  display: flex;
+}
+
+.options-procedimento .rmv-all-procedimento{
+  background-color: rgb(170, 15, 15);
+  width: 130px;
+}

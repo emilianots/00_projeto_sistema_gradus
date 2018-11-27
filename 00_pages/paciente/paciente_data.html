@@ -19,7 +19,7 @@
 <body>
 
     <div id="app" class="app">
-        <div id="sis-top-bar" class="sis-top-bar">  
+        <div id="sis-top-bar" class="sis-top-bar">
             <div id="sis-status-bar" class="sis-status-bar" onclick="window.location='../../index.html'">
                 <img id="sis-logo" class="sis-logo" src="../../01_sources/01_img/logos/logo-gradus-branco.png" alt="App logo"
                     srcset="">
@@ -28,32 +28,18 @@
         </div>
 
         <div id="sis-status" class="sis-status">
-            <h3> Paciente:</h3>
-            <h3 id="upper-nome-paciente" style="font-family: 'Cabin'"></h3>
+            <h3> Painel do paciente</h3>
         </div>
 
         <div id="sis-body" class="sis-body pac-body">
-            
+            <!-- botão voltar -->
+            <div id="step-back" class="step-back" onclick="window.location='./paciente.html'">
+                <button type="button" class="btn bnt-primary btn-md"> <span class="fas fa-angle-left"> </span> Voltar</button>
+            </div>
 
             <!-- corpo da aplicação -->
-            <div id="sis-body-op" class="sis-body-op" >
+            <div id="sis-body-op" class="sis-body-op">
                 <div class="container">
-                    <button class="btn btn-block" onclick="window.location='./paciente_data.html'">Ver dados do paciente</button>
-                    <buttom class="btn btn-block">Realizar evolução</buttom>
-                    <buttom class="btn btn-block">Prescrição</buttom>
-                    <button class="btn btn-block">Nova triagem</button>
-                
-                    <div id="pac-view-data" class="row">
-
-                    </div>
-                    <!-- botão voltar -->
-                    <div id="step-back" class="step-back" >
-                        <button type="button" class="btn bnt-primary btn-md" onclick="window.location='../../index.html'"> <span class="fas fa-angle-left"> </span> Voltar</button>
-                        <buttom class="btn btn-primary btn-success" onclick="javascript:printPDFGeral()">Gerar PDF geral do paciente</buttom>
-                    </div>
-                </div>
-                
-                <div id="dados-paciente" class="container" style="display: none">
                     <div class="row">
                         <div class="col">
                             <label for="nome-paciente">Paciente</label>
@@ -63,7 +49,7 @@
                             <label for="sexo">Sexo</label>
                             <div id="sexo" class="caixa-texto"></div>
                         </div>
-                
+
                     </div>
                     <div class="row">
                         <div class="col col-4">
@@ -89,10 +75,10 @@
                             <div id="std-civil" class="caixa-texto"></div>
                         </div>
                     </div>
-                
+
                     <label for="nome-conjuge">Nome cônjuge</label>
                     <div id="nome-conjuge" class="caixa-texto"></div>
-                
+
                     <div class="row">
                         <div class="col">
                             <label for="nome-mae">Nome mãe</label>
@@ -102,10 +88,18 @@
                             <label for="nome-pai">Nome pai</label>
                             <div id="nome-pai" class="caixa-texto"></div>
                         </div>
-                    </div>              
-                </div>
+                    </div>
+                    <div id="rodape" class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-md" onclick="javacript:gerarPDF()">Gerar
+                                PDF</button>
+                        </div>
+                        <div class="col"></div>
+                    </div>
 
-            </div> 
+
+                </div>
+            </div>
         </div>
     </div>
     <script src="../../01_sources/03_libs/02_jQuery/jquery-3.3.1.min.js"></script>

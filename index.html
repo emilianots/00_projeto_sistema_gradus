@@ -1,77 +1,74 @@
-    <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Gradus™ | Prontuário</title>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-        <link rel="shortcut icon" href="./01_sources/01_img/logos/icon-gradus.png" type="image/x-icon">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gradus™ | Pacientes</title>
 
-    </head>
-    <body>
+    <link rel="shortcut icon" href="./01_sources/01_img/logos/icon-gradus.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style-2.css">
 
-        <div id="app" class="app">
-            
-            <!-- menu laderal -->
-            <nav id="nav-menu" class="nav-menu">
-                <div id="nav-container" class="nav-container">
-                    <header id="menu-header" class="menu-header">
-                        <h3>Fulano de Tal</h3>
-                    </header>
-                    <div id="nav-op-panel">
-                        <div id="nav-op-panel" style="background-color: #003159; color: white" class="nav-op">Painel Principal</div>
-                        <div id="nav-op-triagem" class="nav-op" onclick="window.location='./00_pages/triagem/triagem.html'">Triagem</div>
-                        <div id="nav-op-pacientes" class="nav-op" onclick="window.location=''">Pacientes</div>
-                        <div id="nav-op-evolucao" class="nav-op">Evolução</div>
-                        <div id="nav-op-internamento" class="nav-op">Internamento</div>
-                    </div>
+</head>
 
-                </div>
-            </nav>
-            <div id="overlay-menu" class="overlay">
-            
-            </div>
+<body>
 
-            <div id="sis-top-bar" class="sis-top-bar">
-                <div id="menu-buttom" class="menu-buttom">
-                    <span class="fas fa-bars" ></span>
-                </div>
-                <div id="sis-status-bar" class="sis-status-bar">
-                    <img id="sis-logo" class="sis-logo" src="./01_sources/01_img/logos/logo-gradus-branco.png" alt="App logo" srcset="">
-                    <h3>Hospital Dr. Eudásio Barroso</h3>
-                </div>
-            </div>            
-
-            <div id="sis-status" class="sis-status">
-                <h3>Painel Principal</h3>
-            </div>
-
-            <div id="sis-body" class="sis-body">
-                <div id="op-1" class="main-op" onclick="window.location='./00_pages/triagem/triagem.html'">
-                    <span class="fas fa-address-card" ></span>
-                    <div class="op-name">Realizar Triagem</div>
-                </div>
-                <div id="op-2" class="main-op" onclick="window.location=''">
-                    <span class="fas fa-users"></span>
-                    <div class="op-name">Pacientes</div>
-                </div>
-                <div id="op-3" class="main-op">
-                    <span class="fas fa-chart-line"></span>
-                    <div class="op-name">Evolução</div>
-                </div>
-                <div id="op-4" class="main-op">
-                    <span class="fas fa-procedures"></span>
-                    <div class="op-name">Internamento</div>
-                </div>
-                
+    <div id="app" class="app">
+        <!-- BARRA TOPO -->
+        <div id="sis-top-bar" class="sis-top-bar">
+            <div id="sis-status-bar" class="sis-status-bar" onclick="window.location='../index.html'">
+                <img id="sis-logo" class="sis-logo" src="./01_sources/01_img/logos/logo-gradus-branco.png" alt="App logo"
+                    srcset="">
+                <h3>Hospital Dr. Eudásio Barroso</h3>
             </div>
         </div>
-        <script src="./01_sources/03_libs/02_jQuery/jquery-3.3.1.min.js"></script>
-        <script src="./01_sources/03_libs/03_printThis/printThis.js"></script>
-        <script src="./script.js"></script>
-    </body> 
+        <div class="sis-status">
+            <h3>Pacientes</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-9">
+                        <div class="input-pesquisa">
+                            <input type="text" class="form-control" id="bar-pesquisa" placeholder="Insira o nome do paciente" type="text">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="type-search-content">
+                            <select class="form-control" name="tipo" id="type-search">
+                                <option value="nome">Nome</option>
+                                <option value="sus">SUS</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="margin: 0px 50px">
+                <div class="col col-md-5">CARTÃO SUS</div>
+                <div class="col col-md">NOME</div>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="sis-body" style="height: calc(100vh - 197px);">
+            
+
+            <!-- LISTA DOS PACIENTES -->
+            <div class="container">
+                <div id="lista-pacientes" class="lista-pacientes" style="font-family: 'Cabin'">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./01_sources/03_libs/02_jQuery/jquery-3.3.1.min.js"></script>
+    <script src="./01_sources/05_json/banco.js"></script>
+    <script src="./script.js"></script>
+</body>
+
 </html>

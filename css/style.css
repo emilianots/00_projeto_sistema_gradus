@@ -25,6 +25,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  height: 100vh;
 }
 /* ==== corpo geral do sistema ==== */
 .app {
@@ -74,6 +75,7 @@ body {
 .sis-status {
   margin: 20px 30px;
   box-sizing: border-box;
+  padding-bottom: 10px;
   border-bottom: 1px solid #b6b6b6;
 }
 .sis-status h3 {
@@ -131,7 +133,7 @@ body {
 /* ==== corpo da aplicação ==== */
 .sis-body {
   width: 100%;
-  height: calc(100vh - 117px);
+  height: calc(100vh - 200px);
   padding: 0px 20px 30px 20px;
   box-sizing: border-box;
   overflow: scroll;
@@ -165,6 +167,7 @@ body {
 .step-back {
   color: #046db5;
   font-family: "Asap SemiBold", "Arial", Arial, Helvetica, sans-serif;
+  width: fit-content;
 }
 .btn {
   background-color: #046db5;
@@ -185,4 +188,15 @@ body {
   overflow: hidden;
   margin-bottom: 7px;
   color: #3f3f3f;
+}
+
+/* AJUSTE DA CLASSE APP AO DIMINUIR A TELA */
+@media screen and (max-width: 600px){
+  .app{
+    width: 100%;
+  }
+}
+
+.pac-body{
+    height: calc(100vh - 110px);
 }
