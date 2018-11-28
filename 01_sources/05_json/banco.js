@@ -1,4 +1,5 @@
-let banco = {
+
+var banco = {
   alas: [
     {
       clinica: {
@@ -417,7 +418,7 @@ let banco = {
             id: 17,
             idAla: 1,
 
-            nSus: '9993 1151 2225 4445',
+            nSus: "9993 1151 2225 4445",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Fratura espinhal hemorrágica",
@@ -443,7 +444,7 @@ let banco = {
             id: 18,
             idAla: 1,
 
-            nSus: '8887 5556 8889 9991',
+            nSus: "8887 5556 8889 9991",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Intoxicação por solvente",
@@ -469,7 +470,7 @@ let banco = {
             id: 19,
             idAla: 1,
 
-            nSus: '4443 0009 9990 3332',
+            nSus: "4443 0009 9990 3332",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Corte profundo na mão",
@@ -495,7 +496,7 @@ let banco = {
             id: 4,
             idAla: 20,
 
-            nSus: '0009 9990 9990 8480',
+            nSus: "0009 9990 9990 8480",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Acidente de motocicleta",
@@ -521,7 +522,7 @@ let banco = {
             id: 21,
             idAla: 1,
 
-            nSus: '4443 5554 2212 5554',
+            nSus: "4443 5554 2212 5554",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Estresse pós traumático",
@@ -546,7 +547,7 @@ let banco = {
             nome: "Marykey Domingos da Silva",
             id: 22,
             idAla: 1,
-            nSus: '3332 4949 5858 9696',
+            nSus: "3332 4949 5858 9696",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Passando muito mal",
@@ -571,7 +572,7 @@ let banco = {
             nome: "Vulty Vilares de Queiroz",
             id: 23,
             idAla: 1,
-            nSus: '432 5454 9595',
+            nSus: "432 5454 9595",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Dor de cabeça severa",
@@ -597,7 +598,7 @@ let banco = {
             id: 24,
             idAla: 1,
 
-            nSus: '2212 4884 4435 9090',
+            nSus: "2212 4884 4435 9090",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Fratura severa no dedo indicador",
@@ -631,7 +632,7 @@ let banco = {
             leito: "10",
             enfermaria: "Clinica médica",
 
-            nSus: '9567 4357 2345',
+            nSus: "9567 4357 2345",
             profissao: "diagramadora",
             responsavel: "Paulo Antejoulas",
             dataNasc: "20-02-2018",
@@ -649,7 +650,7 @@ let banco = {
             id: 26,
             idAla: 1,
 
-            nSus: '4443 1155 6432 9989',
+            nSus: "4443 1155 6432 9989",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Estresse pós traumático",
@@ -674,7 +675,7 @@ let banco = {
             nome: "Fujiro Nakombi Ferreira",
             id: 27,
             idAla: 1,
-            nSus: '3321 8457 9525 0000',
+            nSus: "3321 8457 9525 0000",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Baixa freqencia cardiaca",
@@ -700,7 +701,7 @@ let banco = {
             id: 28,
             idAla: 1,
 
-            nSus: '4443 9944 2018 9395',
+            nSus: "4443 9944 2018 9395",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Dor de garganta severa e febre",
@@ -726,7 +727,7 @@ let banco = {
             id: 29,
             idAla: 1,
 
-            nSus: '9393 4040 9595 9595',
+            nSus: "9393 4040 9595 9595",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Picada de cobra",
@@ -752,7 +753,7 @@ let banco = {
             id: 30,
             idAla: 1,
 
-            nSus: '3232 2323 4343 3434',
+            nSus: "3232 2323 4343 3434",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Parada cardiorespiratória",

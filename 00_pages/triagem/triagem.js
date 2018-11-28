@@ -17,6 +17,7 @@ function getPacientes() { // retorna os pacientes do servidor
         }
     })
 }
+
 function getOnePaciente(id) {
     let pacUrl = URL;
     pacUrl += "/" + id;
@@ -55,7 +56,7 @@ function createList(lista) { // popula a variável pacientes
             localStorage.clear();
             localStorage.setItem("paciente", JSON.stringify(elem));
             //toPaciente(this.id);
-            getOnePaciente(this.id);
+            //getOnePaciente(this.id);
         })
         $("#list-pacientes").append(li);
     }

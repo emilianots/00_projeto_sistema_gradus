@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gradus™ | Paciente</title>
+    <title>Gradus | Paciente</title>
 
     <link rel="shortcut icon" href="../../01_sources/01_img/logos/icon-gradus.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/style.css">
@@ -28,15 +28,11 @@
         </div>
 
         <div id="sis-status" class="sis-status">
-            <h3> Painel do paciente</h3>
+            <h3> Paciente</h3>
         </div>
 
         <div id="sis-body" class="sis-body pac-body">
             <!-- botão voltar -->
-            <div id="step-back" class="step-back" onclick="window.location='./paciente.html'">
-                <button type="button" class="btn bnt-primary btn-md"> <span class="fas fa-angle-left"> </span> Voltar</button>
-            </div>
-
             <!-- corpo da aplicação -->
             <div id="sis-body-op" class="sis-body-op">
                 <div class="container">
@@ -90,14 +86,15 @@
                         </div>
                     </div>
                     <div id="rodape" class="row">
-                        <div class="col">
-                            <button type="button" class="btn btn-primary btn-md" onclick="javacript:gerarPDF()">Gerar
-                                PDF</button>
+                        <div class="col col-2">
+                            <div id="step-back" class="step-back" onclick="window.location='./paciente.html'">
+                                <button type="button" class="btn bnt-primary btn-md"> <span class="fas fa-angle-left"> </span> Voltar</button>
+                            </div>
                         </div>
-                        <div class="col"></div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-md" onclick="javacript:gerarPDF()">GerarPDF</button>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

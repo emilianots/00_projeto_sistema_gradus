@@ -45,7 +45,6 @@ function load_pacientes() {
         linha_paciente.id = paciente.id;
         coluna_sus.classList.add("lista-p-id", "coluna-sus");
         coluna_nome.classList.add("lista-p-name", "coluna-nome");
-        //coluna_ala.classList.add("lista-p-ala", "coluna-ala");
 
         coluna_sus.innerHTML = paciente.nSus;
         coluna_nome.innerHTML = paciente.nome;
