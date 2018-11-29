@@ -1,7 +1,7 @@
 /* window.onload = function () {
     alert("Para a total utilização do sistema\né necessário a instalação do servidor local:\n \njson-server")
 } */
-//console.log(banco.alas[0].clinica.pacientes);
+//console.log(banco.alas[0].clinica.pacientes)
 
 var sortByAtribute = function (prop) { //ordenar a lista de pacientes por nome
     return function (x, y) {
@@ -11,6 +11,7 @@ var sortByAtribute = function (prop) { //ordenar a lista de pacientes por nome
 
 
 var listPacientes = banco.alas[0].clinica.pacientes;
+console.log(listPacientes)
 listPacientes.sort(sortByAtribute('nome'));
 for ( let elem of listPacientes) {
     elem.nome = elem.nome.toUpperCase();
@@ -34,30 +35,30 @@ $("#app").mouseup(function (e) { // fecha menu com clique fora dele
 //Carregar Pacientes
 function load_pacientes() {
     for (let paciente of listPacientes) {
-        let lista_pacientes = document.querySelector("#lista-pacientes");
+        //let lista_pacientes = document.querySelector("#lista-pacientes");
+        let item = document.createElement('li');
+        let linha = document.createElement("div");
+        let nsus = document.createElement("div");
+        let nome = document.createElement("div");
+        
+        item.classList.add('list-group-item');
+        linha.classList.add('row');
+        nsus.classList.add('col', 'col-5');
+        nome.classList.add('col');
 
-        let linha_paciente = document.createElement("div");
-        let coluna_sus = document.createElement("div");
-        let coluna_nome = document.createElement("div");
-        //let coluna_ala = document.createElement("div");
+        nsus.innerHTML = paciente.nSus.toUpperCase();
+        nome.innerHTML = paciente.nome.toUpperCase();
 
-        linha_paciente.classList.add("linha-paciente");
-        linha_paciente.id = paciente.id;
-        coluna_sus.classList.add("lista-p-id", "coluna-sus");
-        coluna_nome.classList.add("lista-p-name", "coluna-nome");
+        linha.append(nsus);
+        linha.append(nome);
+        item.append(linha);
 
-        coluna_sus.innerHTML = paciente.nSus;
-        coluna_nome.innerHTML = paciente.nome;
-
-        linha_paciente.appendChild(coluna_sus);
-        linha_paciente.appendChild(coluna_nome);
-
-        linha_paciente.addEventListener("click", function () {
+        item.addEventListener("click", function () {
             localStorage.setItem('paciente', JSON.stringify(paciente));
             window.location = "./00_pages/paciente/paciente.html"
         })
 
-        lista_pacientes.appendChild(linha_paciente);
+        $("#lista-pacientes").append(item);
     }
 }
 
@@ -94,10 +95,10 @@ function filter_pacientes() {
 let i = 0;
 filter.addEventListener("change", function () {
     if (i == 1) {
-        bar_pesquisa.placeholder = "Pesquisar paciente";
+        bar_pesquisa.placeholder = "Pesquisar por nome";
         i = 0;
     } else {
-        bar_pesquisa.placeholder = "Pesquisar número do SUS";
+        bar_pesquisa.placeholder = "Pesquisar por número do SUS";
         i = 1;
     }
 })

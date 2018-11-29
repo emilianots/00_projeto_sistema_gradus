@@ -17,6 +17,111 @@ var banco = {
             nProntuario: "1",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -41,6 +146,111 @@ var banco = {
             docAutorizacao: "12345",
             nProntuario: "1",
             leito: "10",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
             enfermaria: "Clinica médica",
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -66,6 +276,111 @@ var banco = {
             docAutorizacao: "12345",
             nProntuario: "1",
             leito: "10",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
             enfermaria: "Clinica médica",
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -91,6 +406,111 @@ var banco = {
             docAutorizacao: "12345",
             nProntuario: "1",
             leito: "10",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
             enfermaria: "Clinica médica",
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -116,6 +536,111 @@ var banco = {
             docAutorizacao: "12345",
             nProntuario: "1",
             leito: "10",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
             enfermaria: "Clinica médica",
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -141,6 +666,111 @@ var banco = {
             docAutorizacao: "12345",
             nProntuario: "1",
             leito: "10",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
             enfermaria: "Clinica médica",
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -166,6 +796,111 @@ var banco = {
             docAutorizacao: "12345",
             nProntuario: "1",
             leito: "10",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
             enfermaria: "Clinica médica",
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -192,7 +927,111 @@ var banco = {
             nProntuario: "1",
             leito: "10",
             enfermaria: "Clinica médica",
-
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
             profissao: "professor",
             responsavel: "Carlos Eduardo",
             dataNasc: "20-02-1981",
@@ -218,7 +1057,111 @@ var banco = {
             nProntuario: "1",
             leito: "10",
             enfermaria: "Clinica médica",
-
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
             profissao: "professor",
             responsavel: "Carlos Eduardo",
             dataNasc: "20-02-1981",
@@ -244,6 +1187,111 @@ var banco = {
             nProntuario: "1",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -270,6 +1318,111 @@ var banco = {
             nProntuario: "1",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -296,6 +1449,111 @@ var banco = {
             nProntuario: "1",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -322,6 +1580,111 @@ var banco = {
             nProntuario: "1",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -348,6 +1711,111 @@ var banco = {
             nProntuario: "1",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -374,7 +1842,111 @@ var banco = {
             nProntuario: "1",
             leito: "10",
             enfermaria: "Clinica médica",
-
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
             profissao: "professor",
             responsavel: "Carlos Eduardo",
             dataNasc: "20-02-1981",
@@ -400,6 +1972,111 @@ var banco = {
             nProntuario: "1",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -418,7 +2095,7 @@ var banco = {
             id: 17,
             idAla: 1,
 
-            nSus: "9993 1151 2225 4445",
+            nSus: "991 1151 2225 4445",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Fratura espinhal hemorrágica",
@@ -426,6 +2103,111 @@ var banco = {
             nProntuario: "1",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "professor",
             responsavel: "Carlos Eduardo",
@@ -444,7 +2226,7 @@ var banco = {
             id: 18,
             idAla: 1,
 
-            nSus: "8887 5556 8889 9991",
+            nSus: "881 5556 8889 9991",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Intoxicação por solvente",
@@ -452,6 +2234,111 @@ var banco = {
             nProntuario: "2",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "mototaxi",
             responsavel: "Sandra Anenberg",
@@ -470,7 +2357,7 @@ var banco = {
             id: 19,
             idAla: 1,
 
-            nSus: "4443 0009 9990 3332",
+            nSus: "444 0009 9990 3332",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Corte profundo na mão",
@@ -478,6 +2365,111 @@ var banco = {
             nProntuario: "3",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "comentarista esportivo",
             responsavel: "Sergio Moura de Melo",
@@ -496,7 +2488,7 @@ var banco = {
             id: 4,
             idAla: 20,
 
-            nSus: "0009 9990 9990 8480",
+            nSus: "009 9990 9990 8480",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Acidente de motocicleta",
@@ -504,6 +2496,111 @@ var banco = {
             nProntuario: "4",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "motociclista",
             responsavel: "Alexandre Sonzo de Souza",
@@ -522,7 +2619,7 @@ var banco = {
             id: 21,
             idAla: 1,
 
-            nSus: "4443 5554 2212 5554",
+            nSus: "443 5554 2212 5554",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Estresse pós traumático",
@@ -530,6 +2627,111 @@ var banco = {
             nProntuario: "5",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "designer",
             responsavel: "André Santos Calado",
@@ -547,7 +2749,7 @@ var banco = {
             nome: "Marykey Domingos da Silva",
             id: 22,
             idAla: 1,
-            nSus: "3332 4949 5858 9696",
+            nSus: "332 4949 5858 9696",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Passando muito mal",
@@ -555,6 +2757,111 @@ var banco = {
             nProntuario: "6",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "maquiadora",
             responsavel: "Rute Cristina",
@@ -580,6 +2887,111 @@ var banco = {
             nProntuario: "7",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "arquiteta de informação",
             responsavel: "Jéssica Ávila Vilares dos Santos",
@@ -598,7 +3010,7 @@ var banco = {
             id: 24,
             idAla: 1,
 
-            nSus: "2212 4884 4435 9090",
+            nSus: "212 4884 4435 9090",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Fratura severa no dedo indicador",
@@ -606,6 +3018,111 @@ var banco = {
             nProntuario: "8",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "prefeito",
             responsavel: "Ilário Marques",
@@ -631,8 +3148,113 @@ var banco = {
             nProntuario: "9",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
-            nSus: "9567 4357 2345",
+            nSus: "967 4357 1212 2345",
             profissao: "diagramadora",
             responsavel: "Paulo Antejoulas",
             dataNasc: "20-02-2018",
@@ -650,7 +3272,7 @@ var banco = {
             id: 26,
             idAla: 1,
 
-            nSus: "4443 1155 6432 9989",
+            nSus: "443 1155 6432 9989",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Estresse pós traumático",
@@ -658,6 +3280,111 @@ var banco = {
             nProntuario: "10",
             leito: "10",
             enfermaria: "Clinica médica",
+            prontuario: {
+              turno: "Turno 1",
+              data: "25/11/2018",
+              prescricao: {
+                exames_solicitados: [
+                  {
+                    exame: "RAIO-X",
+                    local: "PERNA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    exame: "ULTRASOM",
+                    local: "TÓRAX",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: "INALAÇÃO",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    procedimento: "AEROSOL",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                rotina_medicacao: [
+                  {
+                    medicacao: "CIMEGRIPE",
+                    dosagem: "DE 12H E 12H",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    medicacao: "PARACETAMOL GOTA 40 ML",
+                    dosagem: "5 VEZES AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                dieta: [
+                  {
+                    alimento: "COXINHA",
+                    quantidade: "3X AO DIA",
+                    feito: false,
+                    inf_adicionais: ""
+                  },
+                  {
+                    alimento: "BANANA",
+                    quantidade: "METADE DA BANANA 1X",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ],
+                cuidados: [
+                  {
+                    cuidado: "BRAÇO DIREITO COM SECREÇÕES",
+                    feito: false,
+                    inf_adicionais: ""
+                  }
+                ]
+              },
+              evolucao: {
+                estado_paciente: [
+                  {
+                    estado: "ESTÁVEL",
+                    horario: "10:00"
+                  },
+                  {
+                    estado: "INCONSCIÊNTE",
+                    horario: "22:00"
+                  },
+                  {
+                    estado: "DEBILITADO",
+                    horario: "01:00"
+                  }
+                ],
+                queixas: [
+                  {
+                    queixa: "DOR"
+                  }
+                ],
+                procedimentos_adicionais: [
+                  {
+                    procedimento: ""
+                  }
+                ],
+                comportamentos: [
+                  {
+                    comportamento: ""
+                  }
+                ]
+              },
+              historico: [
+                {
+                  turno: "",
+                  data: "",
+                  prontuario: [{}]
+                }
+              ]
+            },
 
             profissao: "estudante de design",
             responsavel: "Eliseu Tamos Reproves",
@@ -675,7 +3402,7 @@ var banco = {
             nome: "Fujiro Nakombi Ferreira",
             id: 27,
             idAla: 1,
-            nSus: "3321 8457 9525 0000",
+            nSus: "321 8457 9525 0000",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Baixa freqencia cardiaca",
@@ -701,7 +3428,7 @@ var banco = {
             id: 28,
             idAla: 1,
 
-            nSus: "4443 9944 2018 9395",
+            nSus: "443 9944 2018 9395",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Dor de garganta severa e febre",
@@ -727,7 +3454,7 @@ var banco = {
             id: 29,
             idAla: 1,
 
-            nSus: "9393 4040 9595 9595",
+            nSus: "931 4040 9595 9595",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Picada de cobra",
@@ -753,7 +3480,7 @@ var banco = {
             id: 30,
             idAla: 1,
 
-            nSus: "3232 2323 4343 3434",
+            nSus: "323 2323 4343 3434",
             nRegistro: "0000",
             tipoConvenio: "---",
             motInternamento: "Parada cardiorespiratória",

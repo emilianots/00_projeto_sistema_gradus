@@ -38,10 +38,17 @@
             <!-- corpo da aplicação -->
             <div id="sis-body-op" class="sis-body-op" >
                 <div class="container">
-                    <button class="btn btn-block" onclick="window.location='./paciente_data.html'">Ver dados do paciente</button>
-                    <buttom class="btn btn-block">Realizar evolução</buttom>
-                    <buttom class="btn btn-block">Prontuário</buttom>
-                
+                    <div id="pac-panel">
+                        <button class="btn btn-block" onclick="window.location='./paciente_data.html'">Ver dados do paciente</button>
+                        <buttom class="btn btn-block">Realizar evolução</buttom>
+                        <buttom class="btn btn-block" onclick="window.location='../prontuario.html'" >Prontuário</buttom>
+
+                        <!-- botão voltar -->
+                        <div id="step-back" class="step-back">
+                            <button type="button" class="btn bnt-primary btn-md" onclick="window.location='../../index.html'"> Voltar</button>
+                            <buttom class="btn btn-primary" onclick="javascript:printPDFGeral()">Gerar PDF geral do paciente</buttom>
+                        </div>
+                    </div>
                     <div id="pac-view-data" style="display: none" class="row">
                         <div class="container">
                             <div class="row">
@@ -96,64 +103,10 @@
                         
                         </div>
                     </div>
-                    <!-- botão voltar -->
-                    <div id="step-back" class="step-back" >
-                        <button type="button" class="btn bnt-primary btn-md" onclick="window.location='../../index.html'"> <span class="fas fa-angle-left"> </span> Voltar</button>
-                        <buttom class="btn btn-primary btn-success" onclick="javascript:printPDFGeral()">Gerar PDF geral do paciente</buttom>
-                    </div>
+                    
                 </div>
                 
-                <div id="dados-paciente" class="container" style="display: none">
-                    <div class="row">
-                        <div class="col">
-                            <label for="nome-paciente">Paciente</label>
-                            <div id="nome-paciente" class="caixa-texto"></div>
-                        </div>
-                        <div class="col col-3">
-                            <label for="sexo">Sexo</label>
-                            <div id="sexo" class="caixa-texto"></div>
-                        </div>
                 
-                    </div>
-                    <div class="row">
-                        <div class="col col-4">
-                            <label for="data-nasc">Data de nasc.</label>
-                            <div id="data-nasc" class="caixa-texto"></div>
-                        </div>
-                        <div class="col">
-                            <label for="rg">R.G</label>
-                            <div id="rg" class="caixa-texto"></div>
-                        </div>
-                        <div class="col">
-                            <label for="naturalidade">Naturalidade</label>
-                            <div id="naturalidade" class="caixa-texto"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label for="profissao">Profissão</label>
-                            <div id="profissao" class="caixa-texto"></div>
-                        </div>
-                        <div class="col">
-                            <label for="std-civil">Estado civíl</label>
-                            <div id="std-civil" class="caixa-texto"></div>
-                        </div>
-                    </div>
-                
-                    <label for="nome-conjuge">Nome cônjuge</label>
-                    <div id="nome-conjuge" class="caixa-texto"></div>
-                
-                    <div class="row">
-                        <div class="col">
-                            <label for="nome-mae">Nome mãe</label>
-                            <div id="nome-mae" class="caixa-texto"></div>
-                        </div>
-                        <div class="col">
-                            <label for="nome-pai">Nome pai</label>
-                            <div id="nome-pai" class="caixa-texto"></div>
-                        </div>
-                    </div>              
-                </div>
             </div> 
         </div>
     </div>

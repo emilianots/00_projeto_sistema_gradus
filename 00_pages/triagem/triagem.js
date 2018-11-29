@@ -86,13 +86,15 @@ function onlyNames(lista) { //pegar somente os nomes
 }
 
 function newPaciente() { //adicionar novo paciente
-    //let nome = $("#nome-paciente");
-    //console.log($("#nome-paciente").val());
-    //console.log($("#tipo-convenio").val())
-    if ($("#n-registro").val() == "") {
-        
-    }
-    //postPaciente(paciente);
+    let nRegistro = $("#n-registro").val();
+    let tipoConvenio = $("#tipo-convenio").children('option:selected').val();
+    let motInternamento = $("#mot-internamento").val();
+    let docUtorizacao = $("#doc-autorizacao").val();
+    let nProntuario = $("#n-protuario").value();
+    let nleito = $("#n-leito").value();
+    let enfResponsavel = $("#enf-responsavel").value();
+    
+    
 }
 function printar() { // gerar pdf
     $("#app").css({

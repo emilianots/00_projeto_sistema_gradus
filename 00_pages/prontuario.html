@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gradus™ | Prontuário</title>
+
+        <link rel="shortcut icon" href="../01_sources/01_img/logos/icon-gradus.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div id="app" class="app">
+            <!-- BARRA TOPO -->
+            <div id="sis-top-bar" class="sis-top-bar">
+
+                <div id="sis-status-bar" class="sis-status-bar" onclick="window.location='../index.html'">
+                    <img id="sis-logo" class="sis-logo" src="../01_sources/01_img/logos/logo-gradus-branco.png" alt="App logo" srcset="">
+                    <h3>Hospital Dr. Eudásio Barroso</h3>
+                </div>
+            </div>            
+
+            <!-- TOP TITLE PAGINA -->
+            <div class="sis-status">
+                <div class="title">
+                    <h3>Prontuário do Paciente:</h3>
+                </div>
+            </div>
+            <div class="container" style="margin: 0px 0px 0px 10px">
+                
+                <div class="row">
+                    <div class="col">
+                        <button id="btn-prescricao" class="btn btn-primary">Precrição</button>
+                        <button id="btn-evolucao" class="btn btn-primary ">Evolução</button>
+                        <button id="btn-historico" class="btn btn-primary">Histórico</button>
+                        <button id="btn-salvar" class="btn btn-primary">Arquivar prontuário</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Body -->
+            <div class="sis-body lista-evolucao">
+                <!-- PRESCRIÇÃO -->
+                <div class="container">
+                    <div id="prescricao" class="prescricao-content content">
+                        <div class="fontstyle0">Exames solicitados</div>
+                        <div class="exames-solicitados area-evolucao">
+                            <div class="linha-title exame linha-evolucao">
+                                <div class="title fontstyle0">Exame</div>
+                                <div class="local fontstyle0">Local</div>
+                                <div class="edit-desc fontstyle0">Feito</div>
+                            </div>
+                        </div>
+
+                        <div class="fontstyle0">Rotina de medicação</div>
+                        <div class="medicacao-content area-evolucao">
+                            <div class="linha-title medicacao linha-evolucao">
+                                <div class="title fontstyle0">Medicação</div>
+                                <div class="frequencia fontstyle0">Dosagem</div>
+                                <div class="edit-desc fontstyle0">Feito</div>
+                            </div>
+                        </div>
+                        <div class="fontstyle0">Dieta</div>
+                        <div class="dieta-content area-evolucao">
+                            <div class="linha-title dieta linha-evolucao">
+                                <div class="title fontstyle0">Aalimento</div>
+                                <div class="quantidade fontstyle0">Quantidade/Hora</div>
+                                <div class="edit-desc fontstyle0">Feito</div>
+                            </div>
+                        </div>
+
+                        <div class="fontstyle0">Cuidados</div>
+                        <div class="cuidados area-evolucao">
+                            <div class="linha-title cuidado linha-evolucao">
+                                <div class="title fontstyle0">Cuidado</div>
+                                <div class="edit-desc fontstyle0">Feito</div>
+                            </div>
+                        </div>
+
+                        <div class="fontstyle0">Procedimenos adicionais</div>
+                        <div class="procedimentos-adicionais-prescricao area-evolucao">
+                            <div class="linha-title procedimento linha-evolucao">
+                                <div class="title fontstyle0">Procedimento</div>
+                                <div class="edit-desc fontstyle0">Feito</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- EVOLUÇÃO -->
+                    <div id="evolucao" style="display: none" class="evolucao-content content">
+                        <div class="fontstyle0">Estado Do Paciente</div>
+                        <div class="estados-paciente area-evolucao">
+                            <div class="estado-paciente linha-evolucao">
+                                <div class="title fontstyle0">Estado</div>
+                                <div class="hora fontstyle0">Horário</div>
+                                <div class="edit-desc fontstyle0">Opções</div>
+                            </div>
+                            <div class="evolucao-content">
+                            </div>
+                            <div class="options-procedimento fontstyle0">
+                                <div class="add-procedimento botao-2">Adicionar</div>
+                                <div class="rmv-all-procedimento botao-2">Remover tudo</div>
+                            </div>
+                        </div>
+                        <div class="fontstyle0">Queixas</div>
+                        <div class="queixas area-evolucao">
+                            <div class="queixa linha-evolucao">
+                                <div class="title fontstyle0">Queixa</div>
+                                <div class="edit-desc fontstyle0">Opções</div>
+                            </div>
+                            <div class="queixa-content"></div>
+                            <div class="options-procedimento fontstyle0">
+                                <div class="add-procedimento botao-2">Adicionar</div>
+                                <div class="rmv-all-procedimento botao-2">Remover tudo</div>
+                            </div>
+                        </div>
+
+                        <div class="fontstyle0">Procedimentos adicionais</div>
+                        <div class="procedimentos-adicionais area-evolucao">
+                            <div class="procedimento linha-evolucao">
+                                <div class="title fontstyle0">Procedimento</div>
+                                <div class="edit-desc fontstyle0">Opções</div>
+                            </div>
+                            <div class="procedimentos_content"></div>
+                            <div class="options-procedimento fontstyle0">
+                                <div class="add-procedimento botao-2">Aadicionar</div>
+                                <div class="rmv-all-procedimento botao-2">Remover tudo</div>
+                            </div>
+                        </div>
+
+                        <div class="fontstyle0">Comportamento</div>
+                        <div class="procedimentos-adicionais area-evolucao">
+                            <div class="procedimento linha-evolucao">
+                                <div class="title fontstyle0">Comportamento</div>
+                                <div class="edit-desc fontstyle0">Opções</div>
+                            </div>
+                            <div class="comportamento-content"></div>
+                            
+                            <div class="options-procedimento fontstyle0">
+                                <div class="add-procedimento botao-2">Adicionar</div>
+                                <div class="rmv-all-procedimento botao-2">Remover tudo</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- HISTÓRICO -->
+                    <div id="historico" style="display: none" class="historico-content content">
+                        Histórico dos Prontuários
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn bnt-primary magic" onclick="window.location='./paciente/paciente.html'">
+                                Voltar
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../01_sources/03_libs/02_jQuery/jquery-3.3.1.min.js"></script>
+        <script src="../01_sources/05_json/banco.js"></script>
+        <script src="../00_pages/paciente/paciente.js"></script>
+        <script src="../01_sources/04_js/prontuario.js"></script>
+    </body> 
+</html>

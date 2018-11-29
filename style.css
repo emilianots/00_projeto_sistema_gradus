@@ -1,0 +1,534 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #d6d6d6;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #bbbbbb;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #949494;
+  border-radius: 5px;
+}
+/* ==== fontes ==== */
+@font-face {
+  font-family: 'Cabin';
+  src: url("./01_sources/02_fonts/Cabin/Cabin-Regular.ttf");
+}
+@font-face {
+  font-family: 'Asap SemiBold';
+  src: url("./01_sources/02_fonts/Cabin/Cabin-Regular.ttf");
+}
+/* ==== variáveis === */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Cabin", "Arial";
+}
+/* ==== corpo geral do sistema ==== */
+.app {
+  width: 550px;
+  height: 100vh;
+  background-color: #eeeeee;
+  overflow: hidden;
+  margin: 0px auto 0px auto;
+  user-select: none;
+}
+/* ==== barra superior ==== */
+.sis-top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #046db5;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+.menu-buttom {
+  font-size: 30px;
+  margin-right: 20px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  background-color: #003159;
+  cursor: pointer;
+}
+
+.sis-status-bar h3 {
+  font-size: 20px;
+  display: block;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+.sis-logo {
+  width: 110px;
+  cursor: pointer;
+}
+.sis-status {
+  overflow: hidden;
+  margin: 20px 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #b6b6b6;
+}
+.sis-status h3 {
+  font-size: 20px;
+}
+/* menu lateral */
+.nav-menu {
+  height: 100%;
+  position: fixed;
+  background-color: #eeeeee;
+  transition: width 300ms;
+  overflow: hidden;
+  width: 0px;
+  z-index: 10;
+}
+.nav-show {
+  position: fixed;
+  width: 280px;
+}
+.nav-container {
+  width: 280px;
+}
+.menu-header {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  background-color: #003159;
+  color: white;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.menu-header h3 {
+  display: block;
+  padding: 30px 0px 0px 15px;
+  font-size: 15px;
+}
+.nav-op {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2), -1px -2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  display: none;
+  width: 550px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  cursor: pointer;
+}
+/* ==== corpo da aplicação ==== */
+.sis-body {
+  width: 100%;
+  height: calc(100vh - 195px);
+  padding: 0px 20px 0px 20px;
+  overflow: scroll;
+  display: flex;
+}
+.main-op {
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-content: center;
+  width: 230px;
+  height: fit-content;
+  padding: 20px;
+  margin: 8px;
+  color: #3f3f3f;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2), -1px -2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.main-op span {
+  font-size: 50px;
+  margin: 0px 14px;
+  color: #003159;
+}
+.main-op .op-name {
+  height: fit-content;
+  font-family: "Asap SemiBold", "Arial", Arial, Helvetica, sans-serif;
+}
+
+/* Tela de Pacientes */
+
+.ala-paciente{
+  float: right;
+  display: flex;
+}
+
+.ala-combobox{
+  padding: 3px;
+  margin: 5px;
+  position: relative;
+  top: -5px;
+  border-radius: 4px;
+}
+
+.desc-lista-pacientes{
+  display: flex;
+}
+
+.coluna-sus{
+  width: 30%;
+}
+
+.coluna-nome{
+  width: 50%;
+}
+
+.coluna-ala{
+  width: 10%;
+}
+
+.lista-p-id{
+  margin-right: 20px;
+  position: relative;
+  left: -5px;
+  overflow: hidden;
+}
+
+.lista-p-name{
+  overflow: hidden;
+}
+
+.desc-lista-pacientes{
+  position: relative;
+  left: 35px;
+}
+
+.title{
+  float: left;
+}
+
+.linha-paciente{
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  margin: 3px;
+  color: #3f3f3f;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+}
+
+.bar-pesquisa{
+  width: 310px;
+  border-radius: 4px;
+  padding: 3px;
+  margin-right: 3px;
+}
+
+.type-search{
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.search{
+  background-color: #046db5;
+  color: white;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+.pesquisa{
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.type-search-content{
+  margin-right: 3px;
+
+}
+
+.botao-0{
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: #046db5;
+  position: relative;
+  margin-bottom: -10px;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-paciente p{
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.change-paciente p{
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+/* EVOLUIR PACIENTE */
+
+.change-paciente{
+  top: 3px;
+}
+
+.area-evolucao{
+  position: relative;
+  font-size: 15px;
+  padding: 8px;
+  margin: 3px;
+  color: #3f3f3f;
+  border: 1px solid #b3b3b3;
+  border-radius: 8px;
+  background-color: white;
+  width: 100%;
+  left: -15px;
+}
+
+.linha-evolucao{
+  width: 100%;
+  border-bottom: 1px #b6b6b6 solid;
+  position: relative;
+  display: flex;
+  font-family: "Cabin";
+  margin: 5px;
+}
+
+.linha-evolucao-content .desc-procedimento{
+  width: 100%;
+  margin: 5px;
+  display: none;
+}
+
+.input-desc{
+  margin-bottom: 5px;
+}
+
+.input-desc textarea{
+  width: 470px;
+}
+
+.fontstyle0{
+  font-family: "Asap SemiBold";
+}
+
+.title{
+  width: 50%;
+}
+
+.estado-paciente .hora{
+  width: 20%;
+  margin-right: 16%;
+}
+.cuidado .title{
+  width: 90%;
+}
+
+.medicacao .title{
+  width: 60%
+}
+
+.medicacao .frequencia{
+  width: 30%;
+}
+.dieta .quantidade{
+  width: 40%;
+}
+.time{
+  margin-right: 120px;
+}
+
+.queixa .title{
+  width: 86%;
+}
+
+.exame .title{
+  width: 60%;
+}
+
+.exame .local{
+  width: 30%;
+}
+
+
+
+.add-desc-evolucao{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #046db5;
+  position: absolute;
+  right: -33px;
+  top: -4px;
+  padding: 5px;
+}
+
+.add-desc-evolucao .add-desc{
+  background: url("./01_sources/01_img/edit-01.png") no-repeat round;
+  width: 20px;
+  height: 20px;
+}
+
+.procedimentos-adicionais .procedimento .title{
+  width: 86%;
+}
+
+.procedimentos-adicionais-prescricao .procedimento .title{
+  width: 90%;
+}
+
+.botao-1{
+  color: white;
+  background-color: #046db5;
+  width: 25px;
+  height: 25px;
+  padding-left: 5.7px;
+  padding-top: 2px;
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+}
+
+.botao-2{
+  color: white;
+  background-color: #046db5;
+  width: 100px;
+  height: 30px;
+  padding-left: 9px;
+  padding-top: 4px;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.botoes{
+  display:flex;
+}
+
+.linha-evolucao .dell{
+  background-color: rgb(170, 15, 15);
+}
+
+.options-procedimento{
+  margin-top: 50px;
+  display: flex;
+}
+
+.options-procedimento .rmv-all-procedimento{
+  background-color: rgb(170, 15, 15);
+  width: 130px;
+}
+
+.nav-evolucao{
+  overflow: hidden;
+  margin-left: 20px;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+}
+
+.nav-evolucao .btn{
+  border-radius: 5px 5px 0px 0px;
+  margin-left: -3px;
+  user-select: none;
+}
+
+.nav-evolucao .btn-primary{
+  font-size: 17px;
+}
+
+.nav-evolucao #btn-salvar{
+  line-height: 17px;
+  position: relative;
+}
+
+.lista-evolucao-content{
+  display: flex;
+}
+
+.check-select-content {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.select{
+  margin: 7px;
+  position: relative;
+}
+
+.check-select-content input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.check-select-content .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(219, 219, 219);
+  left: 1px;
+  top: -9px;
+  border: 1px solid #2196F3;
+}
+
+.check-select-content input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.check-select-content .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-select-content input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check-select-content .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 10px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  transform: rotate(40deg);
+}
+.btn{
+  font-family: 'Asap SemiBold'
+}
+.magic{
+  margin: 20px 0px 30px 0px;
+  background-color: #007bff;
+  color: white;
+}

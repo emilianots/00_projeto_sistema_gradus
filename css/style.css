@@ -182,7 +182,8 @@ body {
 .caixa-texto {
   background-color: white;
   font-family: "Cabin", "Arial";
-  padding: 6px 10px;
+  font-size: 15px;
+  padding: 4px 10px;
   border: 1px solid #b3b3b3;
   border-radius: 5px;
   overflow: hidden;
@@ -199,4 +200,15 @@ body {
 
 .pac-body{
     height: calc(100vh - 110px);
+}
+.pac-data label{
+  font-size: 13px;
+  margin: 0px;
+}
+.pac-data h3{
+  font-size: 20px;
+  margin: 0px;
+}
+.col{
+  padding: 0px 5px;
 }

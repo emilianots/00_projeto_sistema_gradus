@@ -8,11 +8,11 @@
     <title>Gradus | Paciente</title>
 
     <link rel="shortcut icon" href="../../01_sources/01_img/logos/icon-gradus.png" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
+    crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
 
 </head>
 
@@ -35,46 +35,54 @@
             <!-- botão voltar -->
             <!-- corpo da aplicação -->
             <div id="sis-body-op" class="sis-body-op">
-                <div class="container">
+                <div class="container pac-data">
                     <div class="row">
-                        <div class="col">
-                            <label for="nome-paciente">Paciente</label>
+                        <div class="col col-7">
+                            <label for="nome-paciente">Nome do paciente</label>
                             <div id="nome-paciente" class="caixa-texto"></div>
                         </div>
-                        <div class="col col-3">
-                            <label for="sexo">Sexo</label>
-                            <div id="sexo" class="caixa-texto"></div>
+
+                        <div class="col">
+                            <label for="n-sus">Número do S.U.S</label>
+                            <div id="n-sus" class="caixa-texto"></div>
                         </div>
 
                     </div>
                     <div class="row">
-                        <div class="col col-4">
+                        <div class="col">
                             <label for="data-nasc">Data de nasc.</label>
                             <div id="data-nasc" class="caixa-texto"></div>
                         </div>
-                        <div class="col">
+                        <div class="col ">
                             <label for="rg">R.G</label>
                             <div id="rg" class="caixa-texto"></div>
                         </div>
+                        <div class="col ">
+                            <label for="sexo">Sexo</label>
+                            <div id="sexo" class="caixa-texto"></div>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col">
                             <label for="naturalidade">Naturalidade</label>
                             <div id="naturalidade" class="caixa-texto"></div>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col">
                             <label for="profissao">Profissão</label>
                             <div id="profissao" class="caixa-texto"></div>
                         </div>
-                        <div class="col">
+                    </div>
+                    <div class="row">
+                        <div class="col col-4">
                             <label for="std-civil">Estado civíl</label>
                             <div id="std-civil" class="caixa-texto"></div>
                         </div>
+                        <div class="col">
+                            <label for="nome-conjuge">Nome do cônjuge</label>
+                            <div id="nome-conjuge" class="caixa-texto"></div>
+                        </div>
                     </div>
-
-                    <label for="nome-conjuge">Nome cônjuge</label>
-                    <div id="nome-conjuge" class="caixa-texto"></div>
-
+                    
                     <div class="row">
                         <div class="col">
                             <label for="nome-mae">Nome mãe</label>
@@ -85,14 +93,42 @@
                             <div id="nome-pai" class="caixa-texto"></div>
                         </div>
                     </div>
-                    <div id="rodape" class="row">
-                        <div class="col col-2">
-                            <div id="step-back" class="step-back" onclick="window.location='./paciente.html'">
-                                <button type="button" class="btn bnt-primary btn-md"> <span class="fas fa-angle-left"> </span> Voltar</button>
-                            </div>
+                    <h3>Dados de entrada</h3>
+                    <div class="row">
+                        <div class="col">
+                            <label for="n-registro">Número de registro</label>
+                            <div id="numero-registro" class="caixa-texto"></div>
                         </div>
                         <div class="col">
-                            <button type="button" class="btn btn-primary btn-md" onclick="javacript:gerarPDF()">GerarPDF</button>
+                            <label for="doc-autorizacao">Doc. autorização</label>
+                            <div id="doc-autorizacao" class="autorizacao caixa-texto"></div>
+                        </div>
+                        <div class="col">
+                            <label for="leito">Leito</label>
+                            <div id="leito" class="caixa-texto"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="tipo-convenio">Tipo de convênio</label>
+                            <div id="tipo-convenio" class="caixa-texto"></div>
+                        </div>
+                        <div class="col">
+                            <label for="n-prontuario">Número do prontuário</label>
+                            <div id="n-prontuario" class="caixa-texto"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="mot-internamento">Motivo do internamento</label>
+                            <div id="mot-internamento" class="caixa-texto"></div>
+                        </div>
+                    </div>
+
+                    <div id="rodape" class="row">
+                        <div id="step-back" class="step-back">
+                            <button type="button" class="btn bnt-primary btn-md" onclick="window.location='./paciente.html'">Voltar</button>
+                            <buttom class="btn btn-primary" onclick="javascript:printPDFGeral()">Gerar PDF</buttom>
                         </div>
                     </div>
                 </div>
