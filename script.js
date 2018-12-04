@@ -42,9 +42,10 @@ function load_pacientes() {
         let nome = document.createElement("div");
         
         item.classList.add('list-group-item');
+        item.id = "linha-paciente";
         linha.classList.add('row');
-        nsus.classList.add('col', 'col-5');
-        nome.classList.add('col');
+        nsus.classList.add('col', 'col-5', 'nsus-paciente');
+        nome.classList.add('col', 'nome-l-paciente');
 
         nsus.innerHTML = paciente.nSus.toUpperCase();
         nome.innerHTML = paciente.nome.toUpperCase();
@@ -69,18 +70,20 @@ let filter = document.querySelector("#type-search");
 
 function filter_pacientes() {
     let escrita = document.querySelector("#bar-pesquisa").value.toUpperCase();
-    let linhas_pacientes = document.querySelectorAll(".linha-paciente");
+    let linhas_pacientes = document.querySelectorAll("#linha-paciente");
+    let nomesPacientes = $(".nome-l-paciente");
+    let nsusPacientes = $(".nsus-paciente");
 
     for (let i = 0; i < linhas_pacientes.length; i++) {
         if (filter.value == "nome") {
-            let paciente_name = linhas_pacientes[i].querySelector(".coluna-nome");
+            let paciente_name = nomesPacientes[i];
             if (paciente_name.innerHTML.toUpperCase().indexOf(escrita) > -1) {
                 linhas_pacientes[i].style.display = "";
             } else {
                 linhas_pacientes[i].style.display = "none";
             }
         } else {
-            let paciente_sus = linhas_pacientes[i].querySelector(".coluna-sus");
+            let paciente_sus = nsusPacientes[i];
             if (paciente_sus.innerHTML.toUpperCase().indexOf(escrita) > -1) {
                 linhas_pacientes[i].style.display = "";
             } else {
